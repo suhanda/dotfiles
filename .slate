@@ -1,0 +1,30 @@
+# SLATE CONFIG
+
+config defaultToCurrentScreen true
+
+# Shows app icons and background apps, spreads icons in the same place.
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows true
+config windowHintsSpread true
+
+# Windows Hint
+bind e:cmd hint QWERASDFZXCV # QWERTY lefthanded
+
+# Grid Padding 6x2 on monitor 0 and 8x3 on monitor 1
+bind g:cmd grid padding:5 0:6,2 #1:8,3 2:6,6
+
+# Abstract positions
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+alias hyper fn;ctrl
+
+# Binding
+bind 1:${hyper} ${lefthalf}
+bind 2:${hyper} ${full}
+bind 3:${hyper} ${righthalf}

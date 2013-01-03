@@ -16,7 +16,6 @@ alias h="history"
 alias j="jobs"
 alias v="vim"
 alias m="mate ."
-alias s="subl ."
 alias o="open"
 alias oo="open ."
 
@@ -106,6 +105,7 @@ alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Re
 
 # Disable Spotlight
 alias spotoff="sudo mdutil -a -i off"
+
 # Enable Spotlight
 alias spoton="sudo mdutil -a -i on"
 
