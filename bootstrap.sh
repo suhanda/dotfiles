@@ -16,9 +16,6 @@ else
 	fi
 fi
 
-# install oh-my-zsh
-curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
-
 # do it!
 unset doIt
 source ~/.bash_profile
