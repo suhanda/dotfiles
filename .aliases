@@ -88,6 +88,9 @@ alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
+#cleanup terminal log, for a faster terminal login
+alias emptylog="sudo rm -rf /private/var/log/asl/*.asl"
+
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
