@@ -15,10 +15,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName  "azr-devmach"
-sudo scutil --set HostName      "azr-devmach"
-sudo scutil --set LocalHostName "azr-devmach"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "azr-devmach"
+sudo scutil --set ComputerName  "AT007"
+sudo scutil --set HostName      "AT007"
+sudo scutil --set LocalHostName "AT007"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "AT007"
 
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false

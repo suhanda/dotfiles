@@ -18,4 +18,4 @@ fi
 
 # do it!
 unset doIt
-source ~/.bash_profile
+source ~/.zshrc
