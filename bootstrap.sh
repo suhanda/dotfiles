@@ -19,4 +19,5 @@ fi
 
 # do it!
 unset doIt
+chsh -s /usr/local/bin/zsh
 source ~/.zshrc
