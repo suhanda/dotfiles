@@ -22,7 +22,8 @@ alias o="open"
 alias oo="open ."
 
 # My aliases
-alias pub-"cd ~/public_html"
+alias pub="cd ~/public_html"
+alias sb="sublime"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
