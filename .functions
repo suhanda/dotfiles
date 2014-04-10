@@ -14,7 +14,7 @@ function gpl() {
 
 # git pull and push
 function gps() {
-    git pull "$1" "@2" && git push "$1" "$2"
+    git pull "$1" "$2" && git push "$1" "$2"
 }
 
 # Determine size of a file or total size of a directory
